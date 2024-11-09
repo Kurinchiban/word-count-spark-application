@@ -11,7 +11,7 @@ spark = SparkSession.builder \
 sc = spark.sparkContext
 
 # Read the text file
-lines = sc.textFile('/home/kurinchiban/Desktop/word-count-spark-application/word-count-spark-local-mode/Sample_data.txt')
+lines = sc.textFile('/word-count-spark-application/word-count-spark-local-mode/Sample_data.txt')
 
 def clean_word(word):
     return re.sub(r'[^a-zA-Z0-9]', '', word)
