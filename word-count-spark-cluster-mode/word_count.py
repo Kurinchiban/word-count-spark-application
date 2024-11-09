@@ -4,7 +4,7 @@ from pyspark.sql import SparkSession
 # Create Spark session
 spark = SparkSession.builder \
     .appName("Read_text_file") \
-    .master("local[*]") \
+    .master("spark://BTCCHL0016:7077") \
     .getOrCreate()
 
 # Get the SparkContext from the SparkSession
